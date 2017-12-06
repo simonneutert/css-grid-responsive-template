@@ -1,0 +1,206 @@
+html {
+  font-family: 'Spectral SC', serif;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+.responsive {
+  max-width: 100%;
+}
+.grid-navigation ul {
+  list-style-type: none;
+}
+.grid-navigation li {
+  display: inline;
+  padding-right: 0.5em;
+}
+.hero {
+  grid-area: hero;
+  padding: 0;
+  background-image: url('https://farm8.staticflickr.com/7357/8730600921_5c3cfe340d_o_d.jpg');
+  height: 540px;
+  background-position: center;
+  background-size: cover;
+}
+.footer-grid {
+  background-color: #152228;
+  color: #d0d7db;
+}
+.sidebar {
+  background-color: #152228;
+  color: #d0d7db;
+}
+.footer-grid>div {
+  padding: 1em;
+}
+.footer1 {
+  grid-area: footer1;
+}
+.footer2 {
+  grid-area: footer2;
+}
+.footer3 {
+  grid-area: footer3;
+}
+.header-grid {
+  display: grid;
+}
+.content-grid {
+  display: grid;
+}
+.footer-grid {
+  display: grid;
+}
+@media (min-width: 120px) and (max-width: 767px) {
+  .hero {
+    max-height: 240px;
+  }
+  .header-grid {
+    grid-template-columns: 45% 55%;
+    grid-template-areas: "header-mobile header-center";
+    position: fixed;
+    background-color: white;
+    width: 100%
+  }
+  .header-center {
+    grid-area: header-center;
+  }
+  .header-mobile {
+    grid-area: header-mobile;
+  }
+  .header-left {
+    grid-area: header-left;
+    display: none;
+  }
+  .header-right {
+    grid-area: header-right;
+    display: none;
+  }
+  .content-grid {
+    grid-template-columns: auto;
+    grid-template-areas: "hero" "main" "sidebar";
+    padding-top: 3em;
+  }
+  .content-grid>div {
+    padding: 2em;
+  }
+  .content {
+    grid-area: main;
+  }
+  .sidebar {
+    align-self: baseline;
+    grid-area: sidebar;
+    background-color: #152228;
+    color: #d0d7db;
+    border-bottom: 1px solid #d0d7db;
+  }
+  .footer-grid {
+    grid-template-columns: auto;
+    grid-template-areas: "footer1" "footer2" "footer3";
+  }
+  .footer-grid>div {
+    padding: 2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-grid {
+    grid-template-columns: 60% 20% 20%;
+    grid-template-areas: "header-left header-center header-right";
+  }
+  .header-grid>div {
+    padding: 1em;
+  }
+  .header-left {
+    grid-area: header-left;
+  }
+  .header-center {
+    grid-area: header-center;
+  }
+  .header-right {
+    grid-area: header-right;
+    text-align: right;
+  }
+  .header-mobile {
+    grid-area: header-mobile;
+    display: none;
+  }
+  .content-grid {
+    grid-template-columns: auto;
+    grid-template-columns: 33% auto;
+    grid-template-areas: "hero hero" "sidebar main";
+  }
+  .content-grid>div {
+    padding: 2em;
+  }
+  .content {
+    grid-area: main;
+  }
+  .sidebar {
+    align-self: baseline;
+    grid-area: sidebar;
+    background-color: #152228;
+    color: #d0d7db;
+    padding: 1em 4em 2em 1em !important;
+  }
+  .footer-grid {
+    grid-template-columns: auto;
+    grid-template-areas: "footer1 footer2 footer3";
+    background-color: #152228;
+    color: #d0d7db;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-grid {
+    justify-content: space-between;
+    grid-template-columns: 70% 15% 15%;
+    grid-template-rows: auto;
+    grid-template-areas: "header-left header-center header-right";
+  }
+  .header-grid>div {
+    padding: 1em;
+  }
+  .header-left {
+    grid-area: header-left;
+  }
+  .header-center {
+    grid-area: header-center;
+  }
+  .header-right {
+    grid-area: header-right;
+    text-align: right;
+    margin-right: 1em;
+  }
+  .header-mobile {
+    grid-area: header-mobile;
+    display: none;
+  }
+  .content-grid {
+    background-color: #f7fcff;
+    grid-template-columns: 20% 5% 65% auto;
+    grid-template-areas: "hero hero hero hero" "sidebar . main .";
+  }
+  .content-grid>div {
+    padding: 1em;
+  }
+  .hero {
+    grid-area: hero;
+    padding: 0;
+  }
+  .responsive {
+    max-width: 100%;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .content {
+    grid-area: main;
+    color: #152228;
+    background-color: #f7fcff;
+  }
+  .footer-grid {
+    grid-template-columns: 20% 25% 25% 25% auto;
+    grid-template-areas: ". footer1 footer2 footer3 .";
+  }
+  .footer-grid>div {
+    padding: 4em 1em 8em 1em;
+  }
+}
