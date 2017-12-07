@@ -1,0 +1,18 @@
+html {
+  font-family: 'Spectral SC', serif;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: tomato;
+}
+
+.responsive {
+  max-width: 100%;
+}
