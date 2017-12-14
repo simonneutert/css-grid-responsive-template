@@ -1,6 +1,6 @@
 # CSS Grid Responsive Template
 
-Simple and easy CSS Grid Layout Template to get you started or inspired. I for myself always struggled with the bloat of frameworks and hacks I need to remember.
+Simple and easy CSS Grid Layout Template to get you started or inspired. I for myself always struggled with the bloat of frameworks and hacks I needed to keep in mind.
 
 CSS Grid is pure love for logical layouting without hacks and magic.
 
