@@ -4,7 +4,11 @@ Simple and easy CSS Grid Layout Template to get you started or inspired. I for m
 
 CSS Grid is pure love for logical layouting without hacks and magic.
 
-## Can I use CSS Grid?
+## I made my homepage with it!
+
+[http://www.simon-neutert.de](http://www.simon-neutert.de)
+
+## Can I use CSS Grid? Yes, it is the future!
 
 83,3 % coverage for Germany and growing... (7-12-2017)
 
