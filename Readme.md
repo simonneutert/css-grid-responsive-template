@@ -10,7 +10,7 @@ CSS Grid is pure love for logical layouting without hacks and magic.
 
 ## Can I use CSS Grid? Yes, it is the future!
 
-83,3 % coverage for Germany and growing... (7-12-2017)
+87,4 % coverage for Germany and growing... (18-04-2018)
 
 [CSS Grid on caniuse.com](https://caniuse.com/#feat=css-grid)
 
